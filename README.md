@@ -12,6 +12,6 @@ git clone https://github.com/osmancoskun/mergin-wallpaper
 ```
 ### Usage
 ```
-cd mergin-wallpapers
+cd mergin-wallpaper
 python3 ./randomWallpaper.py
 ```
