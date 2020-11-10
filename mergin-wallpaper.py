@@ -34,7 +34,7 @@ class operationsOnFiles():
     #Setting random wallpaper function
     def settingRandomWallpaper(self, liste):
         randomedWallpaper = random.choice(liste)
-        os.system("gsettings set org.gnome.desktop.background picture-uri ./src/" + randomedWallpaper)
+        os.system("gsettings set org.gnome.desktop.background picture-uri $(pwd)/src/" + randomedWallpaper)
         operationsOnFiles.sendNotification("Wallpaper Randomly Changed to " + randomedWallpaper)
 
     #Downloading daily bing wallpaper
