@@ -20,7 +20,6 @@ class operationsOnFiles():
         preview ="./src/" + ui.listWidget.currentItem().text()
         ui.viewWallpaper.setPixmap(QtGui.QPixmap(preview))
 
-   
     
 
     def updateWallpapers():
@@ -28,18 +27,19 @@ class operationsOnFiles():
 
     def settingWallpaper():
         selectedWallpaper = ui.listWidget.currentItem().text()
-        os.system("gsettings set org.gnome.desktop.background picture-uri /home/$USER/Projects/src/" + selectedWallpaper)
+        print("gsettings set org.gnome.desktop.background picture-uri $(pwd)/src/" + selectedWallpaper)
+        os.system("gsettings set org.gnome.desktop.background picture-uri $(pwd)/src/" + selectedWallpaper)
         operationsOnFiles.sendNotification("Wallpaper set to " + selectedWallpaper)
 
     #Setting random wallpaper function
     def settingRandomWallpaper(self, liste):
         randomedWallpaper = random.choice(liste)
-        os.system("gsettings set org.gnome.desktop.background picture-uri /home/$USER/Projects/src/" + randomedWallpaper)
+        os.system("gsettings set org.gnome.desktop.background picture-uri ./src/" + randomedWallpaper)
         operationsOnFiles.sendNotification("Wallpaper Randomly Changed to " + randomedWallpaper)
 
     #Downloading daily bing wallpaper
     def downloadBingWallpaper():
-
+        
         #Processing json data to get direct url of wallpaper
         jsonData = requests.get("https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US")
         wallpaperData = json.loads(jsonData.text)
