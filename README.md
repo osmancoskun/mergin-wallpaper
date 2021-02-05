@@ -13,7 +13,7 @@ Go follow her on instagram for more beautiful pictures.
 - Gnome Notifications
 ### Dependencies
 ```
-python3, wget
+python3, wget, PyQt5
 ```
 ### Installation
 ```
