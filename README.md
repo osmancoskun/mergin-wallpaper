@@ -1,11 +1,14 @@
 # Mergin Wallpaper
-i know that i have a QTextEdit there and it has NO job in application totally.
-new features are going to be added when i have free time.
-For these high quality pictures, i'm thankful for my friend's support. 
-Go follow her on instagram for more beautiful pictures.
-- [Nilsu Erkul on Instagram](https://www.instagram.com/nilsuerkull/)
+Application ported from QT5 to GTK4.
+You can find old `QT5` version in `mergin-wallpaper.py` file.
+to start new `GTK` version, simple run `Main.py` file under `src` folder
+```python
+python src/Main.py
+```
+### GTK4 Version
+![](https://github.com/osmancoskun/mergin-wallpaper/assets/44034936/dc300226-46e0-46c2-822c-139135f036bd)
 
-###
+### QT5 Version
 ![](https://media.giphy.com/media/fucRwmd8MY2oNPQ5ik/giphy.gif)
 ### Features
 - Preview wallpaper before setting it
