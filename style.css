@@ -1,0 +1,15 @@
+window {
+    border: 1px solid green;
+}
+
+label {
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mainbox {
+    padding: 20px;
+}
